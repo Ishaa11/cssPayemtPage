@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamezone</title>
+    <style type="text/css">
+        h1 {
+  margin-top: 50px;
+}
+
+.animation {
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 350px;
+  height: 250px;
+  background-color: rgb(26, 86, 175);
+  border: 15px solid #aa190e;
+  animation: square-to-circle 1s .83s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+}
+ 
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:black;
+    transform:rotate(0deg);
+  }
+  15%{
+    border-radius:15% 15% 15% 15%;
+    background:black;
+    transform:rotate(15deg);
+  }
+  25%  {
+    border-radius:25% 25% 25% 25%;
+    background:black;
+    transform:rotate(35deg);
+  }
+  50%  {
+    border-radius:50% 50% 50% 50%;
+    background:black;
+    transform:rotate(90deg);
+  }
+  75%  { 
+    border-radius:75% 75% 75% 75%;
+    background:black;
+    transform:rotate(180deg);
+  }
+
+  100% {  
+    border-radius:100% 100% 100% 100%;
+    background:black;
+    transform:rotate(360deg);
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container animated zoomIn" style="background-color: bisque;">
+        <div class="row">
+          <h1 class="text-primary text-center">Rectangle to Ball Animation</h1>
+          <div class="animation"></div>
+        </div>
+    </div>
+</body>
+</html>
